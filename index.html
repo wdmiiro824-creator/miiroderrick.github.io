@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UKRIDE - Ride Booking</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to UKRIDE</h1>
+        <p>Owner: Marvin Wandyaka</p>
+    </header>
+
+    <section class="booking">
+        <h2>Book Your Ride</h2>
+        <form id="rideForm">
+            <input type="text" id="pickup" placeholder="Enter Pick-Up Location" required>
+            <input type="text" id="destination" placeholder="Enter Destination" required>
+            <button type="submit">Book Ride</button>
+        </form>
+        <p id="confirmation" style="display: none; color: green;">Ride booked successfully!</p>
+    </section>
+
+    <section class="rating">
+        <h2>Rate Our Service</h2>
+        <div class="stars" id="starContainer">
+            <span data-value="1">&#9733;</span>
+            <span data-value="2">&#9733;</span>
+            <span data-value="3">&#9733;</span>
+            <span data-value="4">&#9733;</span>
+            <span data-value="5">&#9733;</span>
+        </div>
+        <p id="ratingValue"></p>
+    </section>
+
+    <footer>
+        &copy; 2025 UKRIDE. All Rights Reserved.
+    </footer>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
